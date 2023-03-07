@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "g78vn9HZEeQQMDukgL5Ow2tvVYNpnZQVPpFsKp+9GqS0TiZ3POevAcpiAraG5+tFrUTkZ5AFPp9BczFSvr9Sbw==",
+  "success": true,
+  "projectFilePath": "D:\\Praca\\Programowanie4\\Projekt1\\Projekt1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\adria\\.nuget\\packages\\csvhelper\\30.0.1\\csvhelper.30.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
