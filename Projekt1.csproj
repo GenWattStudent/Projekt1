@@ -11,4 +11,10 @@
     <PackageReference Include="CsvHelper" Version="30.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="hotele.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

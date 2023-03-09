@@ -1,7 +1,7 @@
 ﻿using CsvHelper.Configuration;
 using CsvHelper.Configuration.Attributes;
 
-namespace Projekt1.Models
+namespace Projekt1
 {
     public class Hotel
     {

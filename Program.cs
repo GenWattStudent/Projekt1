@@ -1,7 +1,7 @@
 ﻿using CsvHelper;
 using System.Globalization;
-using Projekt1.Models;
 using CsvHelper.Configuration;
+using Projekt1;
 
 public class Program
 {
