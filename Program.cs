@@ -36,7 +36,7 @@ public class Program
 
         const string csvFile = "hotele.csv";
 
-        System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+        Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
         using (var reader = new StreamReader(csvFile, Encoding.GetEncoding(1250)))
         using (var csv = new CsvReader(reader, config))
@@ -151,7 +151,7 @@ public class Program
                     Kind = r.Key,
                     hotelCount = r.Count()
                 });
-
+            Console.WriteLine("Zadanie 8. Pogrupować hotele wg charakteru usług i zwrócić ile hoteli występuje w każdej grupie\n");
             Console.WriteLine("Charaktery i ich liczebność:");
 
             foreach (var item in hotelsCountByKind)
