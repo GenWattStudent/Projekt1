@@ -5,7 +5,7 @@ using Projekt1;
 
 public class Program
 {
-    static void displayHotel(Hotel hotel)
+    static void DisplayHotel(Hotel hotel)
     {
         Console.WriteLine($"Lp: {hotel.Lp,4} | Name: {hotel.Name,40} | Phone number: {hotel.PhoneNumber,16} | Hotel Category: {hotel.Category,6}");
     }
@@ -13,7 +13,7 @@ public class Program
     {
         foreach (var hotel in hotels)
         {
-            displayHotel(hotel);
+            DisplayHotel(hotel);
         }
     }
 
