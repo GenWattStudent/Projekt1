@@ -2,6 +2,8 @@
 using System.Globalization;
 using CsvHelper.Configuration;
 using Projekt1;
+using System;
+using System.Text;
 
 public class Program
 {
@@ -25,15 +27,18 @@ public class Program
 
     static void Main()
     {
+
         //[AR]1. Wczytać dane z pliku hotele.csv z użyciem biblioteki CsvHelper
         var config = new CsvConfiguration(CultureInfo.InvariantCulture)
         {
-            Delimiter = ";"
+            Delimiter = ";",
         };
 
         const string csvFile = "hotele.csv";
 
-        using (var reader = new StreamReader(csvFile))
+        System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+
+        using (var reader = new StreamReader(csvFile, Encoding.GetEncoding(1250)))
         using (var csv = new CsvReader(reader, config))
         {
             List<Hotel> hotels = csv.GetRecords<Hotel>().ToList();
@@ -151,7 +156,7 @@ public class Program
 
             foreach (var item in hotelsCountByKind)
             {
-                Console.WriteLine($"Charakter: {item.Kind, 24} | ile hoteli: {item.hotelCount,4}");
+                Console.WriteLine($"Charakter: {item.Kind,24} | ile hoteli: {item.hotelCount,4}");
             }
         }
     }
