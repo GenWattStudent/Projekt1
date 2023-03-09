@@ -3,7 +3,6 @@ using CsvHelper.Configuration.Attributes;
 
 namespace Projekt1
 {
-    //[Delimiter(";")]
     public class Hotel
     {
         [Index(0)]

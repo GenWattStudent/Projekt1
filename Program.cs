@@ -2,7 +2,6 @@
 using System.Globalization;
 using CsvHelper.Configuration;
 using Projekt1;
-using System;
 using System.Text;
 
 public class Program
@@ -12,6 +11,7 @@ public class Program
     {
         Console.WriteLine($"Lp: {hotel.Lp,4} | Name: {hotel.Name,60} | Phone number: {hotel.PhoneNumber,16} | Hotel Category: {hotel.Category,6}");
     }
+
     static void DisplayHotels(IEnumerable<Hotel> hotels)
     {
         foreach (var hotel in hotels)
