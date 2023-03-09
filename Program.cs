@@ -78,12 +78,29 @@ public class Program
 
             Console.WriteLine("Charaktery usług:");
 
-            foreach(var service in distinctServices)
+            foreach (var service in distinctServices)
             {
                 Console.WriteLine($"\t{service}");
             }
 
             DisplaySpacer();
+
+            //[MZ]5. Wyświetlić wszystkie kategorie hoteli bez powtórzeń
+            Console.WriteLine("Zadanie 5. Wyświetlić wszystkie kategorie hoteli bez powtórzeń\n");
+
+            var distinctCategories = hotels
+                .Select(r => r.Category)
+                .Distinct();
+
+            Console.WriteLine("Kategorie hoteli:");
+
+            foreach (var category in distinctCategories)
+            {
+                Console.WriteLine($"\t{category}");
+            }
+
+            DisplaySpacer();
+
 
             //[AR]6.Wyświetlić hotele, które pochodzą z okolicy Bielska - Białej(numer telefonu zaczyna się 33)
 
@@ -103,21 +120,39 @@ public class Program
 
             var hotelsCountInCategory = hotels
                 .GroupBy(h => h.Category)
-                .Select(h => new {
+                .Select(h => new
+                {
                     Category = h.Key,
                     hotelCount = h.Count()
                 });
 
             Console.WriteLine("Zadanie 7. Pogrupować hotele wg kategorii i zwrócić ile hoteli występuje w każdej grupie\n");
 
-            Console.WriteLine("Kategorie i ich liczebnosć:");
+            Console.WriteLine("Kategorie i ich liczebność:");
 
             foreach (var item in hotelsCountInCategory)
             {
-                Console.WriteLine($"Category name: {item.Category,8}, hotel count: {item.hotelCount,4}");
+                Console.WriteLine($"Kategoria: {item.Category,8}, ile hoteli: {item.hotelCount,4}");
             }
 
             DisplaySpacer();
+
+            //[MZ] 8. Pogrupować hotele wg charakteru usług i zwrócić ile hoteli występuje w każdej grupie
+
+            var hotelsCountByKind = hotels
+                .GroupBy(r => r.Kind)
+                .Select(r => new
+                {
+                    Kind = r.Key,
+                    hotelCount = r.Count()
+                });
+
+            Console.WriteLine("Charaktery i ich liczebność:");
+
+            foreach (var item in hotelsCountByKind)
+            {
+                Console.WriteLine($"Charakter: {item.Kind, 24} | ile hoteli: {item.hotelCount,4}");
+            }
         }
     }
 }
