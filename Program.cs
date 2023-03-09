@@ -8,7 +8,7 @@ public class Program
     //Utility functions
     static void DisplayHotel(Hotel hotel)
     {
-        Console.WriteLine($"Lp: {hotel.Lp,4} | Name: {hotel.Name,40} | Phone number: {hotel.PhoneNumber,16} | Hotel Category: {hotel.Category,6}");
+        Console.WriteLine($"Lp: {hotel.Lp,4} | Name: {hotel.Name,60} | Phone number: {hotel.PhoneNumber,16} | Hotel Category: {hotel.Category,6}");
     }
     static void DisplayHotels(IEnumerable<Hotel> hotels)
     {
@@ -42,6 +42,19 @@ public class Program
 
             DisplaySpacer();
 
+            //[MZ]2. Wyszukać wszystkie hotele, których nazwa zaczyna się na literę 's'
+
+            Console.WriteLine("Zadanie 2. Wyszukać wszystkie hotele, których nazwa zaczyna się na literę 's'\n");
+
+            var hotlesStartingWithS = hotels
+                .Where(r => r.Name.ToLower().StartsWith("s"));
+
+            Console.WriteLine("Hotele hotele, których nazwa zaczyna się na literę 's':");
+
+            DisplayHotels(hotlesStartingWithS);
+
+            DisplaySpacer();
+
             //[AR]3. Obliczyć ile hoteli ma charakter sezonowy
 
             const string searchedKind = "sezonowy";
@@ -52,6 +65,23 @@ public class Program
 
             Console.WriteLine("Zadnanie 3. Obliczyć ile hoteli ma charakter sezonowy\n");
             Console.WriteLine($"Hoteli sezonowych jest: {seasonHotelsCount}");
+
+            DisplaySpacer();
+
+            //[MZ]4.Wyświetlić wszystkie typy charakterów usług bez powtórzeń
+
+            Console.WriteLine("Zadanie 4. Wyświetlić wszystkie typy charakterów usług bez powtórzeń\n");
+
+            var distinctServices = hotels
+                .Select(r => r.Services)
+                .Distinct();
+
+            Console.WriteLine("Charaktery usług:");
+
+            foreach(var service in distinctServices)
+            {
+                Console.WriteLine($"\t{service}");
+            }
 
             DisplaySpacer();
 
