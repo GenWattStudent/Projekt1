@@ -15,3 +15,20 @@ D:\Praca\Programowanie4\Projekt1\obj\Debug\net6.0\refint\Projekt1.dll
 D:\Praca\Programowanie4\Projekt1\obj\Debug\net6.0\Projekt1.pdb
 D:\Praca\Programowanie4\Projekt1\obj\Debug\net6.0\Projekt1.genruntimeconfig.cache
 D:\Praca\Programowanie4\Projekt1\obj\Debug\net6.0\ref\Projekt1.dll
+C:\Users\Robocze ATH\Source\Repos\GenWattStudent\Projekt1\obj\Debug\net6.0\Projekt1.dll
+C:\Users\Robocze ATH\Source\Repos\GenWattStudent\Projekt1\obj\Debug\net6.0\refint\Projekt1.dll
+C:\Users\Robocze ATH\Source\Repos\GenWattStudent\Projekt1\obj\Debug\net6.0\Projekt1.pdb
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\bin\Debug\net6.0\Projekt1.exe
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\bin\Debug\net6.0\Projekt1.deps.json
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\bin\Debug\net6.0\Projekt1.runtimeconfig.json
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\bin\Debug\net6.0\Projekt1.dll
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\bin\Debug\net6.0\Projekt1.pdb
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\bin\Debug\net6.0\CsvHelper.dll
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\obj\Debug\net6.0\Projekt1.csproj.AssemblyReference.cache
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\obj\Debug\net6.0\Projekt1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\obj\Debug\net6.0\Projekt1.AssemblyInfoInputs.cache
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\obj\Debug\net6.0\Projekt1.AssemblyInfo.cs
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\obj\Debug\net6.0\Projekt1.csproj.CoreCompileInputs.cache
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\obj\Debug\net6.0\Projekt1.csproj.CopyComplete
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\obj\Debug\net6.0\Projekt1.genruntimeconfig.cache
+C:\Users\Robocze ATH\source\repos\GenWattStudent\Projekt1\obj\Debug\net6.0\ref\Projekt1.dll

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Praca\\Programowanie4\\Projekt1\\Projekt1.csproj": {}
+    "C:\\Users\\Robocze ATH\\source\\repos\\GenWattStudent\\Projekt1\\Projekt1.csproj": {}
   },
   "projects": {
-    "D:\\Praca\\Programowanie4\\Projekt1\\Projekt1.csproj": {
+    "C:\\Users\\Robocze ATH\\source\\repos\\GenWattStudent\\Projekt1\\Projekt1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Praca\\Programowanie4\\Projekt1\\Projekt1.csproj",
+        "projectUniqueName": "C:\\Users\\Robocze ATH\\source\\repos\\GenWattStudent\\Projekt1\\Projekt1.csproj",
         "projectName": "Projekt1",
-        "projectPath": "D:\\Praca\\Programowanie4\\Projekt1\\Projekt1.csproj",
-        "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "D:\\Praca\\Programowanie4\\Projekt1\\obj\\",
+        "projectPath": "C:\\Users\\Robocze ATH\\source\\repos\\GenWattStudent\\Projekt1\\Projekt1.csproj",
+        "packagesPath": "C:\\Users\\Robocze ATH\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Robocze ATH\\source\\repos\\GenWattStudent\\Projekt1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\adria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Robocze ATH\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

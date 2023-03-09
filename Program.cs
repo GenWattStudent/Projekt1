@@ -28,7 +28,6 @@ public class Program
         using (var reader = new StreamReader("hotele.csv"))
         using (var csv = new CsvReader(reader, config))
         {
-            csv.Context.RegisterClassMap<HotelMap>();
             var hotels = csv.GetRecords<Hotel>().ToList();
             // 3. Obliczyć ile hoteli ma charakter sezonowy
             var seasonHotelsCount = hotels.Where(h => h.Services == "sezonowy").Count();
