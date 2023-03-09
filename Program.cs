@@ -5,15 +5,15 @@ using Projekt1;
 
 public class Program
 {
-    static void DisplayHotel(Hotel hotel)
+    static void displayHotel(Hotel hotel)
     {
-        Console.WriteLine($"Lp: {hotel.Lp}, Name: {hotel.Name}, Phone number: {hotel.PhoneNumber} Hotel Category: {hotel.Category}");
+        Console.WriteLine($"Lp: {hotel.Lp,4} | Name: {hotel.Name,40} | Phone number: {hotel.PhoneNumber,16} | Hotel Category: {hotel.Category,6}");
     }
     static void DisplayHotels(IEnumerable<Hotel> hotels)
     {
         foreach (var hotel in hotels)
         {
-            DisplayHotel(hotel);
+            displayHotel(hotel);
         }
     }
 
